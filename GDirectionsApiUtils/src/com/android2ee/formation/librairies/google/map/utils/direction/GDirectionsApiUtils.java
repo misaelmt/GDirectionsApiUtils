@@ -150,7 +150,7 @@ public class GDirectionsApiUtils {
 					// Add the point to the polyline
 					lineOptions.add(point.getLatLng());
 					// Mark the last GDPoint of the path with a HUE_AZURE marker
-					if (i == path.getPath().size() - 1) {
+					/*if (i == path.getPath().size() - 1) {
 						// create marker 
 						Marker marker = map.addMarker(new MarkerOptions().position(point.getLatLng())
 								.title(formatter != null ? formatter.getTitle(path) : "Step " + i)
@@ -163,7 +163,7 @@ public class GDirectionsApiUtils {
 							formatter.setContents(marker, direction, legs, path);
 							marker.showInfoWindow();
 						}
-					}
+					}*/
 				}
 			
 				// Override polyline color 
